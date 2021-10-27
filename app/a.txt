@@ -1,0 +1,876 @@
+ <?php
+  $option           = get_value($payment_params, 'option');
+  $min_amount       = get_value($payment_params, 'min');
+  $max_amount       = get_value($payment_params, 'max');
+  $type             = get_value($payment_params, 'type');
+  $tnx_fee          = get_value($option, 'tnx_fee');
+  $txt              = md5(rand(0, 9999999999));
+?>
+ <form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
+     <div class="for-group text-center">
+         <img src="https://tukuz.com/wp-content/uploads/2020/10/flutter
+         wave-logo-vector.png" alt="Flutterwave icon">
+         <p class="p-t-10">
+             <small><?=sprintf(lang("you_can_deposit_funds_with_flutterwave_they_will_be_automaticly_added_into_your_account"), 'Paypal')?></small>
+         </p>
+     </div>
+
+     <input type="hidden" name="public_key" value="FLWPUBK-b791f498fdd558ca9c8c15bad3abe2af-X" />
+     <input type="hidden" name="customer[email]" value="<?=get_field(USERS, ["id" => session('uid')], 'email')?>" />
+     <input type="hidden" name="customer[name]"
+         value="<?=get_field(USERS, ["id" => session('uid')], 'first_name'.''.'last_name')?>" />
+     <input type="hidden" name="tx_ref" value="<?php echo $txt ?>" />
+
+     <div class="form-group">
+         <label><?=sprintf(lang("amount_usd"), $currency_code)?></label>
+         <input class="form-control square" type="number" name="amount" placeholder="<?php echo $min_amount; ?>">
+     </div>
+
+     <div class="form-group">
+         <label><?php echo lang("note"); ?></label>
+         <ul>
+<?php
+              if ($tnx_fee > 0) {
+            ?>
+            <li><?=lang("transaction_fee")?>: <strong><?php echo $tnx_fee; ?>%</strong></li>
+            <?php } ?>
+            <li><?=lang("Minimal_payment")?>: <strong><?php echo $currency_symbol.$min_amount; ?></strong></li>
+            <?php
+              if ($max_amount > 0) {
+            ?>
+            <li><?=lang("Maximal_payment")?>: <strong><?php echo $currency_symbol.$max_amount; ?></strong></li>
+            <?php } ?>
+            <li><?php echo lang("clicking_return_to_shop_merchant_after_payment_successfully_completed"); ?></li>
+         </ul>
+     </div>
+      <div class="form-group">
+          <label class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" name="agree" value="1">
+            <span class="custom-control-label text-uppercase"><strong><?=lang("yes_i_understand_after_the_funds_added_i_will_not_ask_fraudulent_dispute_or_chargeback")?></strong></span>
+          </label>
+        </div>
+    
+     <input type="hidden" name="currency" value="USD" />
+     <input type="hidden" name="redirect_url" value="https://smmworldprovider.com/add_funds/unsuccess" />
+
+     <button class="btn_2 mt-1 mb-1 w-100" type="submit">ADD FUNDS</button>
+     
+     
+     
+     
+     
+ </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // if (isset($_GET['tx_ref'])) {
+        // $ref = $_GET['tx_ref'];
+
+        // $query = array(
+        //     "SECKEY" => "FLWPUBK-b791f498fdd558ca9c8c15bad3abe2af-X",
+        //     "txref" => $ref
+        // );
+
+
+
+        // $data_string = json_encode($query);
+                
+        // $ch = curl_init('https://api.ravepay.co/flwv3-pug/getpaidx/api/v2/verify');                                                                      
+        // curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        // curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                              
+        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        // curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        // curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+
+
+        // $response = curl_exec($ch);
+
+        // $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+        // $header = substr($response, 0, $header_size);
+        // $body = substr($response, $header_size);
+
+        // curl_close($ch);
+
+        // $resp = json_decode($response, true);
+
+        // $paymentStatus = $resp['data']['status'];
+        // $chargeResponsecode = $resp['data']['chargecode'];
+        // $chargeAmount = $resp['data']['amount'];
+        // $chargeCurrency = $resp['data']['currency'];
+
+        // if (($chargeResponsecode == "00" || $chargeResponsecode == "0")) {
+        //   // transaction was successful...
+        //      // please check other things like whether you already gave value for this ref
+        //   // if the email matches the customer who owns the product etc
+        //   //Give Value and return to Success page
+            
+        //      $a = get_field(USERS, ["id" => session('uid')], 'ids');
+        //     $b = get_field(USERS, ["id" => session('uid')], 'balance') + $chargeAmount;
+        //     $uid = session('uid');
+    
+        //   echo $this->db->update($this->tb_users, ["balance" => $b], ["id" => $uid]);
+            
+        //     echo $b;
+        // }
+        // else{
+        //     echo "nope";
+            
+        // }
+           
+//         } else {
+            
+           
+            
+//           echo '
+           
+//           <section class="add-funds m-t-50">   
+//   <div class="container-fluid">
+//     <div class="row justify-content-md-center">
+//       <div class="col-md-5">
+//         <div class="white_card">
+//           <div class="white_card_header d-flex align-items-center">
+//             <h3 class="m-t-10 text-danger"><i class="fe fe-alert-triangle "></i> payment_unsucessfully</h3>
+//           </div>
+//           <div class="white_card_body">
+//           	<div class="detail text-center text-danger">
+// 	            <p class="p-t-20">sorry_your_payment_failed_<br/>no_charges_were_made</p>
+//           	</div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </sectio
+           
+//           ';
+//         }
+//     }
+//         else {
+          
+//           echo '
+          
+//           <section class="add-funds m-t-50">   
+//   <div class="container-fluid">
+//     <div class="row justify-content-md-center">
+//       <div class="col-md-5">
+//         <div class="white_card">
+//           <div class="white_card_header d-flex align-items-center">
+//             <h3 class="m-t-10 text-danger"><i class="fe fe-alert-triangle "></i> payment_unsucessfully</h3>
+//           </div>
+//           <div class="white_card_body">
+//           	<div class="detail text-center text-danger">
+// 	            <p class="p-t-20">sorry_your_payment_failed_<br/>no_charges_were_made</p>
+//           	</div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </section
+          
+//           ';
+//     }
+support@doteightplus.com
+@doteightplus212019
+themight
+
+
+
+
+
+
+
+
+ if (isset($_POST['tx_ref'])) {
+        $ref = $_POST['tx_ref'];
+        $curl = curl_init();
+        echo $ref;
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://checkout.flutterwave.com/v3/hosted/pay",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => json_encode([
+                'amount' => 100,
+                'customer_email' => 'vad@gmail.com',
+                'txref' => $ref,
+                'SECKEY' => "FLWPUBK-b791f498fdd558ca9c8c15bad3abe2af-X",
+                ]),
+                
+            CURLOPT_HTTPHEADER => [
+                    "Content-Type: application/json",
+                    "cache-control: no-cache"
+                
+                ],
+            
+            
+        ));
+        $response = curl_exec($curl);
+        $resp = json_decode($response, true);
+        header('Location:'. $resp->data->link);
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //   if(isset($_GET['status'])){
+            
+    //         if($_GET['status'] == 'cancelled'){
+                
+    //             header('Location:https://smmworldprovider.com/add_funds/unsuccess');
+    //         }
+    //       elseif($_GET['status'] == 'successful'){
+    //             $txid = $_GET['transaction_id'];
+    //             $curl = curl_init();
+    //             curl_setopt_array($curl, array(
+    //             CURLOPT_URL => "https://api.flutterwave.com/v3/transactions/{$txid}/verify",
+    //             CURLOPT_RETURNTRANSFER => true,
+    //             CURLOPT_ENCODING => "",
+    //             CURLOPT_MAXREDIRS => 10,
+    //             CURLOPT_TIMEOUT => 0,
+    //             CURLOPT_FOLLOWLOCATION => true,
+    //             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    //             CURLOPT_CUSTOMREQUEST => "GET",
+    //             CURLOPT_HTTPHEADER => array(
+    //         "Content-Type: application/json",
+    //         "Authorization: Bearer FLWSECK_TEST-353c4a998b7bd26e2a5af9416ae1fb9f-X"
+    //         ),
+    //     ));
+
+    //     $response = curl_exec($curl);
+
+    //     curl_close($curl);
+    //     $res = json_decode($response);
+    //     if($res->status){
+    //         $amount_paid = $res->data->charged_amount;
+    //         $amount_topay = $res->data->meta->price;
+    //         $emails = $res->data->customer->email;
+    //         if($amount_paid >= $amount_topay){
+    //       $newBalance=$amount_paid; 
+    //       $newEmail=$emails;
+    //       $this->load->model('Flutterwavepay_model');
+    //       $this->Flutterwavepay_model->getUsers($newBalance, $newEmail);
+    //             // echo $response;
+    //         }
+            
+    //         else{
+    //             echo'Fraud Transaction detected';
+    //         }
+            
+    //     }
+    //     else{
+    //         echo 'Can not process payment';
+    //          header('Location:https://smmworldprovider.com/add_funds/unsuccess');
+    //     }
+                
+    //         }
+         
+
+
+
+
+          <script>
+     $("#Send").click(function(){
+      
+		var form = $("#sendform");
+        var formData = new FormData($("#sendform")[0]);
+		  $.ajax({
+              url: form.attr("action"),
+              type: 'POST',
+              data: formData,
+
+               success: function(data){
+                var b = data;
+              },
+              error: function(data){
+                
+              },
+             
+              cache: false,
+              contentType: false,
+              processData: false
+            });
+
+   });
+
+	     </script>
+
+
+
+
+
+
+	     
+
+<?php
+  
+   if (isset($_POST['tx_ref'])) {
+        $ref = $_POST['tx_ref'];
+        $customer_email = $_POST['email'];
+        $amount = $_POST['amount'];
+        $name = $_POST['name'];
+        $PBFPubKey = "FLWPUBK_TEST-11b869f5287ceabe9dd9491d282b6935-X";
+
+       
+        
+        
+           $curl = curl_init();
+         curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.ravepay.co/flwv3-pug/getpaidx/api/v2/hosted/pay",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => json_encode([
+            'txref'=> $ref,
+            'amount'=>$amount,
+            'currency'=>'NGN',
+            'PBFPubKey'=>$PBFPubKey,
+            'redirect_url'=>'https://smmworldprovider.com/add_funds/Flutterwaves?amount='.$amount,
+            'customer_email'=>$customer_email,
+             ]),
+             CURLOPT_HTTPHEADER => [
+                    "content-type: application/json",
+                    "cache-control: no-cache"
+                     ],
+         ));
+         
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        if($err){
+            die('Curl returned err:'  .$err);
+        }
+        $resp = json_decode($response);
+      
+        if(!$resp->data && !$resp->data->link){
+            print_r('API returned error' . $resp->message);
+        }
+        
+         header('Location:' . $resp->data->link);
+         
+        
+    }
+   
+   
+?>
+
+
+
+            
+            
+            
+    //     }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+<?php
+  
+   if (isset($_POST['tx_ref'])) {
+        $ref = $_POST['tx_ref'];
+        $customer_email = $_POST['email'];
+        $amount = $_POST['amount'];
+        $name = $_POST['name'];
+        $PBFPubKey = "FLWPUBK_TEST-d9c2449793f3f877077a47ef750637cd-X";
+    
+         $request = [
+            'txref'=> $ref,
+            'amount'=>$amount,
+            'currency'=>'NGN',
+            'PBFPubKey'=>$PBFPubKey,
+            'redirect_url'=>'https://smmworldprovider.com/add_funds/Flutterwaves',
+            'customer_email'=>$customer_email,
+            'meta'=>[
+                'price'=>$amount
+                ],
+            'customizations'=>[
+             'title'=>'Pied Piper Payments',
+            'description'=>'sample'
+           ]
+        ];
+        $curl = curl_init();
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.ravepay.co/flwv3-pug/getpaidx/api/v2/hosted/pay",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => json_encode($request),
+            CURLOPT_HTTPHEADER => array(
+                    "content-type: application/json",
+                    "cache-control: no-cache"
+                    
+                 ),
+            
+            
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        if($err){
+            die('Curl returned err:'  .$err);
+        }
+        $resp = json_decode($response, true);
+      
+        if(!$resp->data && !$resp->data->link){
+            print_r('API returned error' . $resp->message);
+        }
+        
+    header('Location:' . $resp->data->link);
+   }
+    
+?>
+
+
+
+
+
+<?php
+class Flutterwavepay_model extends CI_model{
+    
+    public function getUsers($paidFee,$paidEmail){
+        $this->db->select('balance');
+        $this->db->from('general_users');
+        $this->db->where('id',8);
+        $query = $this->db->get(); 
+        $result = $query->result();
+        $balance = $result[0];
+        $bal =$balance->balance;
+        $app =$bal + $paidFee;
+        $this->db->set('balance', $app);
+        $this->db->where('email', $paidEmail);
+        $this->db->update('general_users');
+            
+        
+          
+                
+                
+      
+      
+    }
+    
+    
+}
+
+
+?>
+
+
+
+
+
+
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+class Flutterwaves extends CI_Controller {
+    function index(){
+            $cancell = $_GET['cancelled'];
+            if($cancell == 'true'){
+                  redirect(base_url('add_funds'));
+            }
+            else{
+            $ref = $_GET['txref'];
+            $amount=$_GET['amount'];
+            $currency="NGN";
+            
+            $query = array(
+                "SECKEY" => "FLWSECK_TEST-f5577daad2c57032a24f807201c38642-X",
+                "txref" => $ref
+                
+                );
+                
+            $data_string = json_encode($query);
+            $ch = curl_init("https://api.ravepay.co/flwv3-pug/getpaidx/api/v2/verify");
+                curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+                
+            $response = curl_exec($ch);
+            $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+            $header = substr($response, 0, $header_size);
+            $body = substr($response, $header_size);
+            
+            curl_close($ch);
+            $resp = json_decode($response, true);
+            $paymentStatus = $resp['data']['status'];
+            $chargeResponsecode = $resp['data']['chargecode'];
+            $chargeAmount = $resp['data']['amount'];
+            $chargeCurrency = $resp['data']['currency'];
+            $amount_paid = $chargeAmount;
+            $amount_topay = $resp->data->meta->price;
+            $paidFee=$resp['data']['amount']; 
+            $paidEmail=$resp['data']['custemail'];
+              if (($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($chargeAmount == $amount) && ($chargeCurrency == $currency)) {
+                //   echo $response;
+                    // echo  $paidFee;
+                    // echo  $paidEmail; 
+                    
+                    $this->load->model('Flutterwavepay_model');
+                    $this->Flutterwavepay_model->getUsers($paidFee, $paidEmail);
+                    $this->Flutterwavepay_model->getUsers();
+                    redirect(base_url('add_funds'));
+                    
+                    
+                   } 
+                    
+                 
+                 
+              else{
+                      redirect(base_url('add_funds'));
+            
+                }
+            
+            }
+        
+
+  
+  
+    }
+}
+  
+  
+  
+  ?>
+  
+    
+   
+
+NEWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+
+
+
+
+
+
+
+<?php
+  
+        $ref = time();
+        $customer_email = $_POST['email'];
+        $amount = $_POST['amount'];
+        $name = $_POST['name'];
+        $PBFPubKey = "FLWPUBK-4f1b45c043918f91d4baa9d583e0f924-X";
+
+       
+        
+        
+           $curl = curl_init();
+         curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.ravepay.co/flwv3-pug/getpaidx/api/v2/hosted/pay",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => json_encode([
+            'txref'=> $ref,
+            'amount'=>$amount,
+            'currency'=>'NGN',
+            'PBFPubKey'=>$PBFPubKey,
+            //  'redirect_url'=>'https://gainfamee.com/add_funds/Flutterwavesthings',
+             'redirect_url'=>'https://smmworldprovider.com/add_funds//Flutterwaves?amount='.$amount,
+             'customer_email'=>$customer_email,
+             ]),
+             CURLOPT_HTTPHEADER => [
+                    "content-type: application/json",
+                    "cache-control: no-cache"
+                     ],
+         ));
+         
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        if($err){
+            die('Curl returned err:'  .$err);
+        }
+        $resp = json_decode($response);
+      
+        if(!$resp->data && !$resp->data->link){
+            print_r('API returned error' . $resp->message);
+        }
+        
+        return redirect($resp->data->link);
+        //  header('Location:' . $resp->data->link);
+         
+        
+ 
+   
+   
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<section class="add-funds m-t-50">   -->
+<!--  <div class="container-fluid">-->
+<!--    <div class="row justify-content-md-center">-->
+<!--      <div class="col-md-5">-->
+<!--        <div class="card">-->
+<!--          <div class="card-header d-flex align-items-center">-->
+<!--            <h3 class="m-t-10 text-danger"><i class="fe fe-alert-triangle "></i> <?=lang("payment_unsucessfully")?></h3>-->
+<!--          </div>-->
+<!--          <div class="card-body">-->
+<!--            <div class="detail text-center text-danger">-->
+<!--              <p class="p-t-20"><?=lang("sorry_your_payment_failed_no_charges_were_made")?></p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public function gnow($txref){
+         
+         $ref = $txref;
+           
+            $currency="NGN";
+            
+            $query = array(
+                "SECKEY" => "FLWSECK_TEST-f5577daad2c57032a24f807201c38642-X",
+                "txref" => $txref,
+                );
+                
+            $data_string = json_encode($query);
+            $ch = curl_init("https://api.ravepay.co/flwv3-pug/getpaidx/api/v2/verify");
+                curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+                curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+                
+            $response = curl_exec($ch);
+            $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
+            $header = substr($response, 0, $header_size);
+            $body = substr($response, $header_size);
+            
+            curl_close($ch);
+            $resp = json_decode($response, true);
+
+             $status =  $resp['status'];
+            $paymentStatus = $resp['data']['status'];
+            $chargeResponsecode = $resp['data']['chargecode'];
+            $chargeAmount = $resp['data']['amount'];
+            $chargeCurrency = $resp['data']['currency'];
+            $amount_paid = $chargeAmount;
+            $amount_topay = $resp->data->meta->price;
+            $paidFee=$resp['data']['amount']; 
+            $paidEmail=$resp['data']['custemail'];
+             
+            //   if (($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($chargeAmount == $amount) && ($chargeCurrency == $currency)) {
+                  if($status == "success"){
+                  //echo $response;
+                    // echo  $paidFee;
+                    // echo  $paidEmail; 
+                    // die();
+                  
+                    $this->load->model('Flutterwavepay_model');
+                  $this->Flutterwavepay_model->getUsers($paidFee, $paidEmail);
+                //   echo $amount;
+                //   die();
+                    // $this->Flutterwavepay_model->getUsers();
+                    // header('Location:https://gainfamee.com/add_funds');
+                return redirect('https://gainfamee.com/add_funds');
+              }else{
+                  echo 'something went wrong';
+                  die();
+                     return redirect('https://gainfamee.com/add_funds');
+            
+                }
+                
+                //  return redirect('https://gainfamee.com/add_funds');
+                
+   }
+
+
+
+
+
+
+
+
+   $ref = time();
+        $customer_email = $_POST['email'];
+        $amount = $_POST['amount'];
+        $name = $_POST['name'];
+        $PBFPubKey = "FLWPUBK_TEST-11b869f5287ceabe9dd9491d282b6935-X";
+   
+           $curl = curl_init();
+         curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.ravepay.co/flwv3-pug/getpaidx/api/v2/hosted/pay",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => json_encode([
+            'txref'=> $ref,
+            'amount'=>$amount,
+            'currency'=>'NGN',
+            'PBFPubKey'=>$PBFPubKey,
+            // 'redirect_url'=>'https://gainfamee.com/add_funds/Flutterwaves',
+             'redirect_url'=>'https://gainfamee.com/add_funds/Flutterwaves?amount='.$amount,
+             'customer_email'=>$customer_email,
+             ]),
+             CURLOPT_HTTPHEADER => [
+                    "content-type: application/json",
+                    "cache-control: no-cache"
+                     ],
+         ));
+         
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+        if($err){
+            die('Curl returned err:'  .$err);
+        }
+        $resp = json_decode($response);
+      
+        if(!$resp->data && !$resp->data->link){
+            print_r('API returned error' . $resp->message);
+        }
+        
+         return redirect($resp->data->link);
+        //$this->reditt($resp->data->link);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+class Flutterwaves extends CI_Controller {
+    
+  public function __construct(){
+    parent::__construct();
+       $this->load->library('session');
+  }
+    
+   public function index(){
+     
+            $cancell = $_GET['cancelled'];
+            if($cancell == 'true'){
+                return redirect('https://gainfamee.com/add_funds');
+            }
+            else{
+                   $ref = $_GET['txref'];
+            $amount=$_GET['amount'];
+                return redirect('https://gainfamee.com/add_funds/getn/'.$ref);
+                
+                  //return redirect('https://gainfamee.com/add_funds/getn');
+                
+            }
+        
+
+    }
+}
+  
+  
+  
+  ?>
+  

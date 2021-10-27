@@ -1,0 +1,208 @@
+ input[type=text] {
+    border:solid 3px <?php echo $_SESSION['color'];?>;
+    box-sizing:border-box;
+    border-radius: 40%;
+    outline:solid #fc0 0;
+    padding:.5em;
+    transition:all 3s ease-in;
+    width:;
+    z-index:1;
+
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+    &:focus {
+     border:solid 3px blue;
+    box-sizing:border-box;
+    outline:solid #fc0 0;
+    }
+  }
+  #f{
+    transform: translate(-10%,-50%);
+    transition: all 1s;
+    width: 15%;
+    height: 45px;
+    background:<?php echo $_SESSION['color'];?>;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+#k{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 37px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 70px;
+    padding: 0 20px;
+}
+#k placeholder{
+  color: white
+}
+#da{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+#s{
+    box-sizing: border-box;
+    padding: 13px;
+    width: 42.5px;
+    height: 42.5px;
+    position:absolute;
+    top: -4px;
+    right: 0;
+    border-radius: 50%;
+    color:white;
+    transition: all 1s;
+}
+
+#dass{
+  transform: translate(-10%,-50%);
+    transition: all 1s;
+     width: 43.5px;
+    height: 38.5px;
+    background:<?php echo $_SESSION['color'];?>;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 46%;
+
+    /*border: 4px solid white;*/
+    padding: 12px;
+    
+}
+#f:hover{
+    width: 70%;
+    cursor: pointer;
+}
+
+#f:hover input{
+    display: block;
+    color:<?php echo $_SESSION['color'];?>;
+
+}
+
+#f:hover #s{
+    background:<?php echo $_SESSION['color'];?>;
+    color: white;
+}
+
+   @media only screen and (max-height: 200px) {
+        [class*="nav-tabs"]
+        {
+          position:fixed;
+          z-index: 9;
+          background-color:#fff;
+          margin-top:-11%;
+        }
+        [class*=tab-content]
+        {
+          margin-top:5%;
+        }
+    }
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    
+    text-transform: uppercase;
+}
+#tabs{
+  background: <?php echo $_SESSION['color']; ?>;
+    color: #eee;
+}
+#tabs h6.section-title{
+    color: #eee;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-bottom: 4px solid !important;
+    font-weight: bold;
+  
+    
+  
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #eee;
+    
+}
+
+.ret{
+  color: #0a4981;
+  font-size:15px;
+  text-align: center;
+  margin-top: -30px;
+}
+.input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.2s ease-in-out;
+    transition: width 0.8s ease-in-out;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -webkit-transform: scale(.8,.8);
+            transform: scale(.8,.8);
+    -webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 0 0 5px <?php echo $_SESSION['color']; ?>;;
+}
+#myImg
+   {
+    box-shadow: 0 0 0 5px <?php echo $_SESSION['color']; ?>;;
+        -webkit-transition-duration: 1.5s;
+    -moz-transition-duration: 1.5s;
+    -o-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     overflow:hidden;
+
+    cursor: pointer;
+        }
+#myImg:hover{
+transform:rotate(720deg)scale(1.5);
+-ms-transform:rotate(720deg)scale(1.5); /* IE 9 */
+-webkit-transform:rotate(720deg)scale(1.5);
+
+    }
+
