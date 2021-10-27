@@ -183,7 +183,7 @@
   <section class="veg_section layout_padding animated zoomIn " style="margin-top:-150px;">
     <div class="container">
       <div class="heading_container heading_center">
-      <br><br>
+      <br><br> <br><br>
       </div>
       <div class="row">
         <div class="col-md-6 col-lg-4">
@@ -196,7 +196,7 @@
               
               </a>
               <div class="price_box">
-                <h6 class="price_heading">
+                <h6 class="price_heading" style="color: #673AB7">
                  FuoyeMarket is a platform created for the main pupose of connecting campus students to the sellers around them. A platform created for best access to trading, FuoyeMarket can boast of it's features of getting products access to buyers at .
                 </h6>
               </div>
@@ -213,7 +213,7 @@
                 
               </a>
               <div class="price_box">
-                <h6 class="price_heading">
+                <h6 class="price_heading" style="color: #673AB7">
                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -235,7 +235,7 @@
                
               </a>
               <div class="price_box">
-                <h6 class="price_heading">
+                <h6 class="price_heading" style="color: #673AB7">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -376,7 +376,7 @@
 
 <!-- veg section -->
 
-  <section class="veg_section layout_padding animated zoomIn " style="margin-top:-80px;">
+  <section class="veg_section layout_padding animated zoomIn " style="margin-top:-50px;">
     <div class="container">
       <div class="heading_container heading_center">
         <h3 style="color: #673AB7; font-weight:200px; font-size:33px">
