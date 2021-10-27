@@ -125,7 +125,7 @@
 	</div>
 	<div style="position:fixed;bottom:0;width:100%;color:#673AB7;height:30px;padding: 0.4rem">
 		<center>
-		 <span ><b>FuoyeMarket</b> &copy;  2021 Powered by <b><a href="" style="color:#673AB7">VAD.INC</a></b></span></center>
+		 <span ><b>FuoyeMarket</b> &copy;  2021</b></span></center>
 	</div>
 	<!--============================SCRIPTS=====================================================-->
 	

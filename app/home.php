@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>FuoyeMarket || Home</title>
+	<title>FuoyeMarket, - Connect with your choice sellers.</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale="1">
      <!--============================STYLES=====================================================-->
@@ -120,10 +120,10 @@
                 <div class="col-md-6">
                   <div class="detail-box">
                    
-                    <h1>
+                    <h2 style="color: ; font-weight:200px; font-size:40px">
                       Connect <br />
                       with Sellers around you...
-                    </h1>
+                    </h2>
                     <a href="#" class="" style="background: #673AB7">
                       Search now
                     </a>
@@ -137,10 +137,10 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="detail-box">
-                    <h1>
+                    <h2 style="color: ; font-weight:200px; font-size:40px">
                       Unlimited <br />
                       access to choice products...
-                    </h1>
+                    </h2>
                     <a href="#" class="" style="background:#673AB7">
                       Search now
                     </a>
@@ -154,10 +154,10 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="detail-box">
-                    <h1>
+                    <h2 style="color: ; font-weight:200px; font-size:40px">
                       Upload <br />
                       your products...
-                    </h1>
+                    </h2>
                     <a href="account" class="" style="background: #673AB7">
                       Create Account
                     </a>
@@ -183,12 +183,7 @@
   <section class="veg_section layout_padding animated zoomIn " style="margin-top:-150px;">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
-          About Us
-        </h2><br>
-        <p>
-         Get to know more about Fuoyemarket...
-        </p><br><br>
+      <br><br>
       </div>
       <div class="row">
         <div class="col-md-6 col-lg-4">
@@ -273,10 +268,10 @@
   <section class="veg_section layout_padding animated zoomIn " style="margin-top:-150px;">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h3 style="color: #673AB7; font-weight:200px; font-size:33px">
           Top Sellers 
-        </h2><br>
-        <p>
+        </h3><br>
+        <p style="color: #673AB7;">
          Meet the current top sellers, get your products at the best rate from <b>FuoyeMarket</b> top sellers...
         </p>
       </div>
@@ -384,9 +379,9 @@
   <section class="veg_section layout_padding animated zoomIn " style="margin-top:-80px;">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h3 style="color: #673AB7; font-weight:200px; font-size:33px">
           Our Team
-        </h2><br>
+        </h3><br>
         <p>
          Meet with our team members...
         </p>
@@ -398,7 +393,7 @@
               <img src="../images/f.png" alt="">
             </div>
             <div class="detail-box">
-              <a href="">
+              <a href="" style="color: #673AB7; ">
                VAD
               </a>
               <div class="price_box">
@@ -415,7 +410,7 @@
               <img src="../images/e.png" alt="">
             </div>
             <div class="detail-box">
-              <a href="">
+              <a href="" style="color: #673AB7; ">
                Hakodite
               </a>
               <div class="price_box">
@@ -432,7 +427,7 @@
               <img src="../images/d.png" alt="">
             </div>
             <div class="detail-box">
-              <a href="">
+              <a href="" style="color: #673AB7; ">
                 Prodigy
               </a>
               <div class="price_box">
@@ -463,9 +458,9 @@
   <section class="client_section layout_padding-bottom animated zoomIn">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
-          TESTIMONIAL
-        </h2>
+        <h3 style="color: #673AB7; font-weight:200px; font-size:33px ">
+         Don’t just take our word for it
+        </h3>
       </div>
       <div class="col-md-9 col-lg-7 mx-auto px-0">
         <div class="box">
@@ -475,7 +470,7 @@
                 <img src="../images/i.png" alt="">
               </div>
               <div class="name">
-                <h5>
+                <h5 style="color: #673AB7; ">
                   Maya Jonas
                 </h5>
                 <h6>
@@ -497,7 +492,7 @@
               <img src="../images/i.png" alt="">
             </div>
             <div class="name">
-              <h5>
+              <h5 style="color: #673AB7; ">
                 Helen Law
               </h5>
               <h6>
@@ -519,6 +514,79 @@
 
   <!-- end client section -->
   
+<!-- veg section -->
+
+  <section class="veg_section layout_padding animated zoomIn " style="margin-top:-80px;">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h3 style="color: #673AB7; font-weight:200px; font-size:33px ">
+          Our Partners
+        </h3><br>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="../images/f.png" alt="">
+            </div>
+            <div class="detail-box">
+              <a href="" style="color: #673AB7; ">
+               VAD
+              </a>
+              <div class="price_box">
+                <h6 class="price_heading">
+                  Founder (Software Engineer / Full stack Developer)
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="../images/e.png" alt="">
+            </div>
+            <div class="detail-box">
+              <a href="" style="color: #673AB7; ">
+               Hakodite
+              </a>
+              <div class="price_box">
+                <h6 class="price_heading">
+                  Co-Founder (Business Ethusiast)
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box">
+            <div class="img-box">
+              <img src="../images/d.png" alt="">
+            </div>
+            <div class="detail-box">
+              <a href="" style="color: #673AB7; ">
+                Prodigy
+              </a>
+              <div class="price_box">
+                <h6 class="price_heading">
+                 Software Developer / SEO Specialist
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      
+       
+        
+       
+        
+      </div>
+      
+    </div>
+  </section>
+<br><br><br><br>
+  <!-- end veg section -->
 
 <!-- footer section -->
   <section class="container-fluid footer_section animated zoomIn">
@@ -611,7 +679,7 @@
  <footer class=" bg-white fixed-bottom" style="height:30px;font-size:15px;color:#673AB7;">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span ><b>FuoyeMarket</b> &copy;  2021 Powered by <b><a href="https://vaad.netlify.app/" style="color:#673AB7">VAD.INC</a></b></span>
+            <span ><b>FuoyeMarket</b> &copy;  2021  <b></b></span>
            
           </div>
         </div>
