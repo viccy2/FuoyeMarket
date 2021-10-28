@@ -30,7 +30,9 @@
         <nav class="navbar navbar-expand navbar-light  topbar mb-4 static-top shadow" style="background:#673AB7">
 
           <!-- Sidebar Toggle (Topbar) -->
-         <a href=""> <h5 class="text-gray-100 mt-3" style="cursor:pointer;"><b>FuoyeMarket</b></h5></a>
+          <img src="../images/Fmb.png" style="height:70px; width:70px;border-radius:10%"> 
+
+         <a href=""> <h5 class="text-gray-100 mt-3" style="cursor:pointer;"><b> FuoyeMarket</b></h5></a>
 
           <!-- Topbar Search -->
           
@@ -103,7 +105,7 @@
  <!--============================SLIDER=====================================================-->
 	<div class="hero_area" style="margin-top:-24px;">
     <div class="hero_bg_box" style="height:600px">
-      <img src="../images/a.jpg" alt="">
+      <img src="../images/3.jpg" alt="" style="width:100%">
     </div>
     <!-- header section strats -->
     <header class="header_section">
@@ -180,13 +182,13 @@
  <!--============================</>=====================================================-->
 <!-- veg section -->
 
-  <section class="veg_section layout_padding animated zoomIn " style="margin-top:-150px;">
+  <section class="veg_section layout_padding  " style="margin-top:-220px;">
     <div class="container">
       <div class="heading_container heading_center">
       <br><br> <br><br>
       </div>
       <div class="row">
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6">
           <div class="box">
            <!--  <div class="img-box">
               <img src="../images/f.png" alt="">
@@ -195,38 +197,22 @@
               <a href="">
               
               </a>
-              <div class="price_box">
-                <h6 class="price_heading" style="color: #673AB7">
+              <div class="price_box animated slideInLeft"><br>
+                  <h3 style="color: #673AB7; font-weight:200px; font-size:33px">
+            Grow, Connect, Sell...
+          </h3>
+               <p class="price_heading text-left container-fluid" style="">
                  FuoyeMarket is a platform created for the main pupose of connecting campus students to the sellers around them. A platform created for best access to trading, FuoyeMarket can boast of it's features of getting products access to buyers at .
-                </h6>
+
+                </p>
+
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box">
-           <!--  <div class="img-box">
-              <img src="../images/e.png" alt="">
-            </div> -->
-            <div class="detail-box">
-              <a href="">
-                
-              </a>
-              <div class="price_box">
-                <h6 class="price_heading" style="color: #673AB7">
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box">
+        
+        <div class="col-md-6 ">
+          <div class="box animated zoomIn ">
             <!-- <div class="img-box">
               <img src="../images/d.png" alt="">
             </div> -->
@@ -235,14 +221,10 @@
                
               </a>
               <div class="price_box">
-                <h6 class="price_heading" style="color: #673AB7">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </h6>
+                <br><br>
+             
+                <img src="../images/30.png" style="border-radius:15%;height:200px;width:100%">
+         
               </div>
             </div>
           </div>
@@ -265,7 +247,7 @@
 
 <!-- veg section -->
 
-  <section class="veg_section layout_padding animated zoomIn " style="margin-top:-150px;">
+  <section class="veg_section layout_padding  " style="margin-top:-150px;">
     <div class="container">
       <div class="heading_container heading_center">
         <h3 style="color: #673AB7; font-weight:200px; font-size:33px">
@@ -275,7 +257,7 @@
          Meet the current top sellers, get your products at the best rate from <b>FuoyeMarket</b> top sellers...
         </p>
       </div>
-      <div class="row">
+      <div class="row animated slideInRight ">
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
@@ -347,7 +329,7 @@
 
   <section class="about_section animated zoomIn">
     <div class="about_bg_box">
-      <img src="../images/b.jpg" alt="">
+      <img src="../images/29.jpg" alt="">
     </div>
     <div class="container ">
       <div class="row">
@@ -390,7 +372,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="../images/f.png" alt="">
+              <img src="../images/21.jpeg" alt="" style="border-radius:50%;height:15pc;width:100%">
             </div>
             <div class="detail-box">
               <a href="" style="color: #673AB7; ">
@@ -398,7 +380,7 @@
               </a>
               <div class="price_box">
                 <h6 class="price_heading">
-                  Founder (Software Engineer / Full stack Developer)
+                  Founder (Software Engineer / Developer)
                 </h6>
               </div>
             </div>
@@ -407,7 +389,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="../images/e.png" alt="">
+              <img src="../images/23.jpeg" alt="" style="border-radius:50%;height:200px;width:100%">
             </div>
             <div class="detail-box">
               <a href="" style="color: #673AB7; ">
@@ -424,7 +406,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="../images/d.png" alt="">
+              <img src="../images/20.jpg" alt="" style="border-radius:50%;height:200px;width:100%">
             </div>
             <div class="detail-box">
               <a href="" style="color: #673AB7; ">
@@ -455,10 +437,11 @@
 
   <!-- client section -->
 
-  <section class="client_section layout_padding-bottom animated zoomIn">
+  <section class="client_section layout_padding-bottom " style="background: -webkit-linear-gradient(left, #673AB7, #673AB7);">
+
     <div class="container">
-      <div class="heading_container heading_center">
-        <h3 style="color: #673AB7; font-weight:200px; font-size:33px ">
+      <div class="heading_container heading_center"><br><br><br>
+        <h3 style="color: white; font-weight:200px; font-size:33px ">
          Don’t just take our word for it
         </h3>
       </div>
@@ -470,16 +453,16 @@
                 <img src="../images/i.png" alt="">
               </div>
               <div class="name">
-                <h5 style="color: #673AB7; ">
+                <h5 class="text-gray-200">
                   Maya Jonas
                 </h5>
-                <h6>
-                  Customer 
+                <h6 class="text-gray-400">
+                 User
                 </h6>
               </div>
             </div>
           </div>
-          <div class="client_detail">
+          <div class="client_detail text-gray-400">
             <p>
               It is a long established fact that a reader will be distracted by the readable content of a page when
               looking at its layout. The point of using Lorem
@@ -492,15 +475,15 @@
               <img src="../images/i.png" alt="">
             </div>
             <div class="name">
-              <h5 style="color: #673AB7; ">
-                Helen Law
+              <h5 class="text-gray-200">
+                ULTIMADOES TECH
               </h5>
-              <h6>
-               Seller ()
+              <h6 class="text-gray-400">
+               Seller
               </h6>
             </div>
           </div>
-          <div class="client_detail">
+          <div class="client_detail text-gray-400">
             <p>
               It is a long established fact that a reader will be distracted by the readable content of a page when
               looking at its layout. The point of using Lorem
@@ -518,7 +501,7 @@
 
   <section class="veg_section layout_padding animated zoomIn " style="margin-top:-80px;">
     <div class="container">
-      <div class="heading_container heading_center">
+      <div class="heading_container heading_center"><br><br><br>
         <h3 style="color: #673AB7; font-weight:200px; font-size:33px ">
           Our Partners
         </h3><br>
@@ -527,15 +510,15 @@
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="../images/f.png" alt="">
+              <img src="https://vaad.netlify.app/images/vad1.png" alt="" style="height:100px;background:#673AB7;border-radius:50%">
             </div>
-            <div class="detail-box">
-              <a href="" style="color: #673AB7; ">
-               VAD
+            <div class="detail-box" style="margin-top:-50px">
+              <a href="https://vaad.netlify.app/" style="color: #673AB7; ">
+               VAD.INC
               </a>
               <div class="price_box">
                 <h6 class="price_heading">
-                  Founder (Software Engineer / Full stack Developer)
+                  
                 </h6>
               </div>
             </div>
@@ -544,15 +527,15 @@
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="../images/e.png" alt="">
+              <img src="https://doteightplus.com/images/dot.svg" alt="" style="height:100px">
             </div>
-            <div class="detail-box">
-              <a href="" style="color: #673AB7; ">
-               Hakodite
+            <div class="detail-box" style="margin-top:-50px">
+              <a href="https://doteightplus.com/" style="color: #673AB7; ">
+               DotEightPlus
               </a>
               <div class="price_box">
                 <h6 class="price_heading">
-                  Co-Founder (Business Ethusiast)
+                  
                 </h6>
               </div>
             </div>
@@ -561,16 +544,14 @@
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="../images/d.png" alt="">
+              <img src="https://dotpedia.com.ng/images/cover.png" alt="">
             </div>
-            <div class="detail-box">
-              <a href="" style="color: #673AB7; ">
-                Prodigy
+            <div class="detail-box" style="margin-top:-50px">
+              <a href="https://dotpedia.com.ng/" style="color: #673AB7;">
+               Dotpedia
               </a>
               <div class="price_box">
-                <h6 class="price_heading">
-                 Software Developer / SEO Specialist
-                </h6>
+                
               </div>
             </div>
           </div>

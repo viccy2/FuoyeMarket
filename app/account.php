@@ -199,7 +199,7 @@
 					<p>Sign in now to upload your products.</p>
 					<button class="btn transparent" id="sign-in-btn">Sign In</button>
 				</div>
-				<img src="../images/f.png" class="image" alt="">
+				<img src="../images/31.png" class="image" alt="">
 			</div>
 		</div>
 		
