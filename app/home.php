@@ -270,7 +270,7 @@
               <div class="price_box">
                 <h6 class="price_heading">
                   Phones/Gadgets<br><br>
-                  <a href="https://wa.me/+2348148828289" class="btn text-white" style="background:#673AB7 "> <span>Contact</span></a><br>
+                  <a href="https://wa.me/+2348146828289" class="btn text-white" style="background:#673AB7 "> <span>Contact</span></a><br>
                 </h6><br>
                   
               </div>
@@ -519,7 +519,7 @@
               <img src="../images/pel.jpg" alt="" style="height:100px;background:#673AB7;border-radius:50%">
             </div>
             <div class="detail-box" style="margin-top:-50px">
-              <a href="https://wa.me/+2348148828289" style="color: #673AB7; ">
+              <a href="https://wa.me/+2348146828289" style="color: #673AB7; ">
                PELVIXBUY'N'SELL
               </a>
               <div class="price_box">
