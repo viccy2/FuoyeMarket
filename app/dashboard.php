@@ -449,6 +449,14 @@ form.sign-up-form{
                 <option value="Barbing/Hair-styling">Barbing/Hair-styling</option>
                 <option value="Wears/Clothes/Shoes">Wears/Clothes/Shoes</option>
                 <option value="Bags/Luggages">Bags/Luggages</option>
+                 <option value="Electronics">Electronics</option>
+                <option value="Books/Stationaries">Books/Stationaries</option>
+                <option value="Computer/Aplliances">Computer/Aplliances</option>
+                <option value="Games/Gaming">Games/Gaming</option>
+                <option value="Sporting Goods">Sporting Goods</option>
+                <option value="Home/Office">Home/Office</option>
+                 <option value="Automobile">Automobile</option>
+                 <option value="Exchange Service">Exchange Service</option>
 
 
                 
