@@ -27,7 +27,7 @@ session_start();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" initial-scale="1">
      <!--============================STYLES=====================================================-->
-  
+    <link rel="icon" type="image/x-icon" href="../images/fm.jpeg" >
   <link rel="stylesheet" type="text/css" href="../css/sb-admin-2.css">
   <link rel="stylesheet" type="text/css" href="../css/animate.css">
   <link rel="stylesheet" type="text/css" href="../css/sliders.css">
@@ -51,8 +51,7 @@ session_start();
      width: 100%;
      font-family:  'Poppins';
     font-size: 12px;
-    min-height:100vh;
-     max-height:1000vh;
+   
      
 
     
@@ -95,14 +94,14 @@ session_start();
 
         </nav></div>
       
- <section class="section-tours" style="margin-top:0px;">
+ <section class="section-tours">
  <div class="card__side card__side--front"  style="background:linear-gradient(to left top, #673AB7>, rgba(0,0,0,0.2));min-height:100vh;
      max-height:1000vh;">
  <div class="card__picture card__picture--2 "  >
 
   </div>
   <h4 class="card__heading" style="margin-top:40px">
-  <span class="card__heading-span card__heading-span--2" style="background:#673AB7;font-family: inherit;font-size:20px"> Profile</span>
+  <span class="card__heading-span card__heading-span--2" style="background:#673AB7;font-family: inherit;font-size:20px;height:1000pc;width:100%"> Profile</span>
   </h4>
   <div class="card__details" style="color:gray">
       
@@ -116,15 +115,15 @@ session_start();
                     </div>
                   </nav>
                    
-<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent"  >
 
-<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><br>
+<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" ><br>
      
    <div class="payment-cart-pro mg-t-15 mg-b-30">
             
                     <div class="">
                         <div class="card payment-card responsive-mg-b-30 card border-left-primary shadow h-100 py-2'><div class='payment-inner-pro ">
-                            <div class="payment-inner-pro ">
+                            <div class="payment-inner-pro " style="max-height:100000pc;min-height:100000pc">
                            
                                 <div class="text-gray-600">
                                     <div class="">
@@ -158,14 +157,15 @@ session_start();
                     </div></div>
 </div>
 
-<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><br>
+<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"  ><br >
   <input type="" name="" value="<?php echo $_SESSION[cmpn] ?>" id="next" hidden>
-          <div class="payment-cart-pro  ">
-            <div class="container-fluid text-gray-600">
-            <div class="row" id="displaybox">
 
-</div></div></div> 
+            <div class="container-fluid text-gray-600">
+            <div class="row" id="displaybox" >
+
+</div></div> 
 </div>
+
              
                 
             
@@ -214,13 +214,13 @@ session_start();
           var i;
           var out = "";
           for(i = 0; i < arr.length; i++) {
-          out += " <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'><div class='card payment-card responsive-mg-b-30 card border-left-primary shadow h-100 py-2'><div class='container'><img src='"+arr[i].product_image+"' alt='Image error' width='120' height='120' style='width:100%;height:250px;border-radius:5%'></div><div class='payment-inner-pro'><i class='fa fa-cc-paypa' aria-hidden='true'></i><h5></h5><div class='row m-t-10 container-fluid'><div class='col-sm-6'><strong class='m-r-5'>Product Name : </strong>"+arr[i].product_name+"<br><strong class='m-r-5'>Price : </strong>#"+arr[i].product_price+"<br> <strong class='m-r-5'></div><div class='col-sm-6 text-right'> </div></div></div></div><br></div>";
+          out += "<div class='row'><div class='col-md-12'> <div class='card border-left-primary'><div class='card card-body'><img src='"+arr[i].product_image+"' alt='Image error' style='width:100%;height:250px;border-radius:5%'><div class='col-sm-6'><strong class='m-r-5'>Product Name : </strong>"+arr[i].product_name+"<br><strong class='m-r-5'>Price : </strong>#"+arr[i].product_price+"<br> <strong class='m-r-5'></div></div></div></div></div>";
 
             }
             $('#displaybox').html(out);
             });
             };
-          
+         
 </script>
    <script src="../md/vendor/jquery/jquery.min.js"></script>
   <script src="../md/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

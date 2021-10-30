@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale="1">
      <!--============================STYLES=====================================================-->
+     <link rel="icon" type="image/x-icon" href="../images/fm.jpeg" >
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/sb-admin-2.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/animate.css">

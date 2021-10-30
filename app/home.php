@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale="1">
      <!--============================STYLES=====================================================-->
-  
+   <link rel="icon" type="image/x-icon" href="../images/fm.jpeg" >
 	<link rel="stylesheet" type="text/css" href="../css/sb-admin-2.css">
 	<link rel="stylesheet" type="text/css" href="../css/animate.css">
 	<link rel="stylesheet" type="text/css" href="../css/sliders.css">
@@ -27,7 +27,7 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light  topbar mb-4 static-top shadow" style="background:#673AB7">
+        <nav class="navbar navbar-expand navbar-light  topbar mb-4 fixed-top" style="background:#673AB7">
 
           <!-- Sidebar Toggle (Topbar) -->
           <img src="../images/Fmb.png" style="height:70px; width:70px;border-radius:10%"> 
@@ -92,7 +92,7 @@
   <!--============================APP=====================================================-->
 <div class="payment-cart-pro  ">
             <div class="container-fluid text-gray-600">
-            <div class="row" id="displaybox">
+            <div class="row" id="displaybox" >
 
 </div></div></div>
   
@@ -115,7 +115,7 @@
     <!-- slider section -->
     <section class="slider_section animated zoomIn">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" style="margin-top:-200px">
+        <div class="carousel-inner" style="margin-top:-50px">
           <div class="carousel-item active">
             <div class="container">
               <div class="row">
@@ -202,7 +202,7 @@
             Grow, Connect, Sell...
           </h3>
                <p class="price_heading text-left container-fluid" style="">
-                 FuoyeMarket is a platform created for the main pupose of connecting campus students to the sellers around them. A platform created for best access to trading, FuoyeMarket can boast of it's features of getting products access to buyers at .
+                 FuoyeMarket is a platform created for the main pupose of connecting campus students to the sellers around them. The platform created for best access to trading, FuoyeMarket can boast of it's features of getting products available to buyers.
 
                 </p>
 
@@ -257,20 +257,22 @@
          Meet the current top sellers, get your products at the best rate from <b>FuoyeMarket</b> top sellers...
         </p>
       </div>
-      <div class="row animated slideInRight ">
+      <div class="row  ">
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="../images/f.png" alt="">
+              <img src="../images/pel.jpg" alt="">
             </div>
             <div class="detail-box">
-              <a href="">
-               VAD.INC
+              <a href="" style="color: #673AB7">
+              PELVIXBUY'N'SELL
               </a>
               <div class="price_box">
                 <h6 class="price_heading">
-                  Accessories
-                </h6>
+                  Phones/Gadgets<br><br>
+                  <a href="https://wa.me/+2348148828289" class="btn text-white" style="background:#673AB7 "> <span>Contact</span></a><br>
+                </h6><br>
+                  
               </div>
             </div>
           </div>
@@ -278,16 +280,19 @@
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="../images/e.png" alt="">
+              <img src="https://dotpedia.com.ng/images/cover.png" alt="">
             </div>
             <div class="detail-box">
-              <a href="">
-                VAD.TECH
+              <a href="" style="color: #673AB7">
+                DOTPEDIA
               </a>
               <div class="price_box">
                 <h6 class="price_heading">
-                  Gadget
+                 Education Solutions<br><br>
+                 <a href="https://dotpedia.com.ng/" class="btn text-white" style="background:#673AB7 "> <span>Contact</span></a>
                 </h6>
+                <br>
+                   
               </div>
             </div>
           </div>
@@ -298,13 +303,15 @@
               <img src="../images/d.png" alt="">
             </div>
             <div class="detail-box">
-              <a href="">
-                Ultimadoes
+              <a href="" style="color: #673AB7">
+                ULTIMADOES
               </a>
               <div class="price_box">
                 <h6 class="price_heading">
-                 Gadget
+                 Gadget/Phones/Accessories<br><br>
+                    <a href="#" class="btn text-white" style="background:#673AB7 "> <span>Contact</span></a>
                 </h6>
+            
               </div>
             </div>
           </div>
@@ -472,11 +479,11 @@
         <div class="box">
           <div class="client_id">
             <div class="img-box">
-              <img src="../images/i.png" alt="">
+              <img src="../images/pel.jpg" alt="">
             </div>
             <div class="name">
               <h5 class="text-gray-200">
-                ULTIMADOES TECH
+               PELVIXBUY'N'SELL
               </h5>
               <h6 class="text-gray-400">
                Seller
@@ -485,8 +492,7 @@
           </div>
           <div class="client_detail text-gray-400">
             <p>
-              It is a long established fact that a reader will be distracted by the readable content of a page when
-              looking at its layout. The point of using Lorem
+              FuoyeMarket is a very great platform, I enjoyed using it, very easy to use and a very great platform for connecting with my buyers.
             </p>
           </div>
         </div>
@@ -510,11 +516,11 @@
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="https://vaad.netlify.app/images/vad1.png" alt="" style="height:100px;background:#673AB7;border-radius:50%">
+              <img src="../images/pel.jpg" alt="" style="height:100px;background:#673AB7;border-radius:50%">
             </div>
             <div class="detail-box" style="margin-top:-50px">
-              <a href="https://vaad.netlify.app/" style="color: #673AB7; ">
-               VAD.INC
+              <a href="https://wa.me/+2348148828289" style="color: #673AB7; ">
+               PELVIXBUY'N'SELL
               </a>
               <div class="price_box">
                 <h6 class="price_heading">
@@ -584,15 +590,15 @@
               Follow us on our social platforms.
             </p>
             <div class="social_box">
-              <a href="">
+              <a href="#">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
            
-              <a href="">
+              <a href="https://wa.me/+2349072045997">
                 <i class="fa fa-whatsapp" aria-hidden="true"></i>
               </a> 
 
-              <a href="">
+              <a href="https://instagram.com/fuoye_market?utm_medium=copy_link">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
@@ -682,7 +688,7 @@
           var i;
           var out = "";
           for(i = 0; i < arr.length; i++) {
-          out += " <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'><div class='card payment-card responsive-mg-b-30 card border-left-primary shadow h-100 py-2'><div class='payment-inner-pro'><i class='fa fa-cc-paypa' aria-hidden='true'><img src='"+arr[i].display_pic+"' alt='Person' width='96' height='96' style='width:40px;height:40px;border-radius: 50%'></i><h5>"+arr[i].company_name+"</h5><div class='row m-t-10'><div class='col-sm-6'><strong class='m-r-5'>Product Category : </strong>"+arr[i].product_category+"<br> <strong class='m-r-5'>Location : </strong>"+arr[i].location+"</div><div class='col-sm-6 text-right'> <a href='contact?user="+arr[i].seller_id+"&category="+arr[i].product_category+"&cmpn="+arr[i].company_name+"'><button class='btn'>Contact</button></a></div></div></div></div><br><br></div>";
+          out += " <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12' style='margin-top: 100px'><div class='card payment-card responsive-mg-b-30 card border-left-primary shadow h-100 py-2'><div class='payment-inner-pro'><i class='fa fa-cc-paypa' aria-hidden='true'><img src='"+arr[i].display_pic+"' alt='Person' width='96' height='96' style='width:40px;height:40px;border-radius: 50%'></i><h5>"+arr[i].company_name+"</h5><div class='row m-t-10'><div class='col-sm-6'><strong class='m-r-5'>Product Category : </strong>"+arr[i].product_category+"<br> <strong class='m-r-5'>Location : </strong>"+arr[i].location+"</div><div class='col-sm-6 text-right'> <a href='contact?user="+arr[i].seller_id+"&category="+arr[i].product_category+"&cmpn="+arr[i].company_name+"'><button class='btn'>Contact</button></a></div></div></div></div><br><br></div>";
 
             }
             $('#displaybox').html(out);
