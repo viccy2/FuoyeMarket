@@ -471,8 +471,7 @@
           </div>
           <div class="client_detail text-gray-400">
             <p>
-              It is a long established fact that a reader will be distracted by the readable content of a page when
-              looking at its layout. The point of using Lorem
+            FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good app to connect with my choice sellers.
             </p>
           </div>
         </div>
