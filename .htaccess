@@ -1,6 +1,4 @@
-ErrorDocument 404 /opps.html
-ErrorDocument 403 /opps.html
-ErrorDocument 500 /opps.html
+
 
 RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME} !-d
