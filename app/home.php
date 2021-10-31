@@ -471,7 +471,7 @@
               </div>
               <div class="name">
                 <h5 class="text-gray-200 text-center">
-                  Maya Jonas
+                  Ayomide
                 </h5>
                 <h6 class="text-gray-400 text-center">
                  User
@@ -490,14 +490,14 @@
       <div class="col-md-6">
         <div class="box">
     
-                <img src="../images/i.png" alt="" style="height:180px;width:;border-radius:10%">
+                <img src="../images/pel.jpg" alt="" style="height:180px;width:100%;border-radius:10%">
               </div>
               <div class="name">
                 <h5 class="text-gray-200 text-center">
-                  Maya Jonas
+               PelvixBuy'N'Sell
                 </h5>
                 <h6 class="text-gray-400 text-center">
-                 User
+                 Seller
                 </h6>
               </div>
             </div>
