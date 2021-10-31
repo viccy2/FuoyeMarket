@@ -31,6 +31,10 @@ $target_path = createAvatarImage($nameFirstChar);
             
             $msg= "Account created successfully";
             echo $msg;
-
+            
+            $subj = "Activation Code (FuoyeMarket)";
+            $msg = "Use this code to activate your account ".$validate;
+            $headers = "FROM: FuoyeMarket@mail.com";
+          mail($email,$subj,$msg,$headers);
     }
 ?>

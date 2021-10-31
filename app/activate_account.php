@@ -85,9 +85,9 @@
 
 		});
 	</script>
-	<div class="container" style="background: -webkit-linear-gradient(top,#673AB7,rgba(0, 0, 0, 0.15));opacity:0.9;">
+	<div class="container" style="background: -webkit-linear-gradient(top,#673AB7,rgba(0, 0, 0, 0.15));opacity:0.9;height: ">
 		<div class="forms-container">
-			<div class="signin-signup" style="margin-top:-30px">
+			<div class="signin-signup" style="margin-top:-170px">
 				<form action="activate.php" class="sign-in-form" method="post" id="signinform">
 					<h2 class="title" style="color:white;">Activate account</h2>
 					<div class="input-field">

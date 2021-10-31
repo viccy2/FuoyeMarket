@@ -137,10 +137,10 @@
 
 		});
 	</script>
-	<div class="container" style="background: -webkit-linear-gradient(top,#673AB7,rgba(0, 0, 0, 0.15));opacity:0.9;">
+	<div class="container" style="background: -webkit-linear-gradient(top,#673AB7,rgba(0, 0, 0, 0.15));opacity:0.9;min-width:height:10vh;">
 		<div class="forms-container">
 			<div class="signin-signup">
-				<form action="sign.php" class="sign-in-form" method="post" id="signinform">
+				<form action="sign.php" class="sign-in-form" method="post" id="signinform" style="margin-top:-250px">
 					<h2 class="title" style="color:white;">Sign In</h2>
 					<div class="input-field">
 						<i class="fa fa-envelope"></i>
@@ -152,10 +152,10 @@
 					</div>
 					<input type="button" value="Sign In" class="btn solid" id="SignIn">
 
-					<p class="social-text" style="color:white;"> Forgot password ?  </p><a href="forgot_password" style="color:white;">click here</a>
+					<!-- <p class="social-text" style="color:white;"> Forgot password ?  </p><a href="forgot_password" style="color:white;">click here</a> -->
 					
 				</form>
-				<form action="reg.php" class="sign-up-form" method="post" id="signupform">
+				<form action="reg.php" class="sign-up-form" method="post" id="signupform" style="margin-top:100px">
 					<h2 class="title" style="color:white;">Sign Up</h2>
 					<div class="input-field">
 						<i class="fa fa-user"></i>

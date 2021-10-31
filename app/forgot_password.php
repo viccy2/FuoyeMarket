@@ -87,7 +87,7 @@
 	</script>
 	<div class="container" style="background: -webkit-linear-gradient(top,#673AB7,rgba(0, 0, 0, 0.15));opacity:0.9;">
 		<div class="forms-container">
-			<div class="signin-signup" style="margin-top:-80px">
+			<div class="signin-signup" style="margin-top:-220px">
 				<form action="forgot.php" class="sign-in-form" method="post" id="signinform">
 					<h2 class="title" style="color:white;">Forgot password</h2>
 					<div class="input-field">
