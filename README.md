@@ -1,2 +1,2 @@
 # FuoyeMarket
- FuoyeMarket (Online platform}
+ FuoyeMarket (e-commerce platform}
