@@ -27,7 +27,7 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light  topbar mb-4 fixed-top" style="background:#673AB7;width:100%">
+        <nav class="navbar navbar-expand navbar-light  topbar mb-4 fixed-top" style="background:white;width:100%">
 
           <!-- Sidebar Toggle (Topbar) -->
           <a href=""> <img src="../images/fm.jpeg" style="height:50px; width:50px;border-radius:50%"> </a>
@@ -39,12 +39,27 @@
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
-
+ <!-- Nav Item - User Information -->
+           <!--  <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="account" id="" role="button" >
+                <span class="mr-2  d-lg-inline text-gray-300 small">New Account</span>
+                
+              </a>
+              
+            </li> -->
+             <!-- Nav Item - User Information -->
+           <!--  <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="account" id="" role="button" >
+                <span class="mr-2  d-lg-inline text-gray-300 small">New Account</span>
+                
+              </a>
+              
+            </li> -->
             <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow ">
                <form class=" p-3 ">
             <div class="input-group">
-             <select class="form-control" name="product_category" id="categorys" required onselect="searchAll(this.value)" style="width:120px">
+           <!--   <select class="form-control" name="product_category" id="categorys" required onselect="searchAll(this.value)" style="width:120px">
                 <option value="" selected disabled>Category</option>
                 <option value="Food/Beverages">Food/Beverages</option>
                 <option value="Phones/Gadgets/Smart Watches">Phones/Gadgets/Smart Watches</option>
@@ -65,7 +80,7 @@
                  <option value="Exchange Service">Exchange Service</option>
 
                 
-              </select>
+              </select> -->
              
             </div>
           </form>
@@ -84,7 +99,7 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="account" id="" role="button" >
-                <span class="mr-2  d-lg-inline text-gray-300 small">New Account</span>
+                <span class="mr-2  d-lg-inline small" style="color:#673AB7">Create Account</span>
                 
               </a>
               
@@ -113,7 +128,7 @@
  <!--============================SLIDER=====================================================-->
 	<div class="hero_area" style="margin-top:;">
     <div class="hero_bg_box" style="height:600px; width:100%;">
-      <img src="../images/3.jpg" alt="" style="">
+      <img src="../images/29.jpg" alt="" style="">
     </div>
     <!-- header section strats -->
     <header class="header_section">
@@ -210,10 +225,13 @@
             Grow, Connect, Sell...
           </h3>
                <p class="price_heading text-left container-fluid text-gray-600" style="">
-                 FuoyeMarket is a platform created for the main pupose of connecting campus students to the sellers around them. The platform created for best access to trading, FuoyeMarket can boast of it's features of getting products available to buyers.
+                 FuoyeMarket is a platform created for the main pupose of connecting campus students to the sellers around them. The platform created for best access to trading. FuoyeMarket can boast of it's features of getting products available to buyers.
 
                 </p>
+                 <p class="price_heading text-left container-fluid text-gray-600" style="">
+                 FuoyeMarket gives the opportunity for sellers based on variety of services, products and goods to render or sell to create sellers account and upload their products to potential buyers. Also, for users to create account and have medium to add their products and connect with the sellers.
 
+                </p>
               </div>
             </div>
           </div>
@@ -250,90 +268,33 @@
 
   <!-- end veg section -->
 
-
+ <section class="veg_section layout_padding animated zoomIn " style="margin-top:-100px;">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-6">
+        <div class="card-body">
+          <h3 style="color:#673AB7">Our Aims & Objectives</h3>
+          <p class="text-gray-600">To create an online presence for sellers to connect with their prospective buyers.
+            Also, to connect campus students with their choice sellers around them.
+           </p>
+          
+        </div>
+      </div>
+       <div class="col-md-6">
+        <div class="card-body">
+           <img src="../images/k2.jpg">
+        </div>
+      </div>
+       
+     </div>
+      
+    </div>
+  </section>
 
 
 <!-- veg section -->
 
-  <section class="veg_section layout_padding  " style="margin-top:-150px;">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h3 style="color: #673AB7; font-weight:200px; font-size:33px">
-          Top Sellers 
-        </h3><br>
-        <p style="" class="text-gray-600">
-         Meet the current top sellers, get your products at the best rate from <b>FuoyeMarket</b> top sellers...
-        </p>
-      </div>
-      <div class="row  ">
-        <div class="col-md-6 col-lg-4">
-          <div class="box">
-            <div class="img-box">
-              <img src="../images/pel.jpg" alt="" style="border-radius:10%">
-            </div>
-            <div class="detail-box">
-              <a href="" style="color: #673AB7">
-              PELVIXBUY'N'SELL
-              </a>
-              <div class="price_box">
-                <h6 class="price_heading text-gray-600">
-                  Phones/Gadgets<br><br>
-                  <a href="https://wa.me/+2348146828289" class="btn text-white" style="background:#673AB7 "> <span style="color:white">Contact</span></a><br>
-                </h6><br>
-                  
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box">
-            <div class="img-box">
-              <img src="https://dotpedia.com.ng/images/cover.png" alt="" style="border-radius:10%;width:100%;">
-            </div>
-            <div class="detail-box">
-              <a href="" style="color: #673AB7">
-                DOTPEDIA
-              </a>
-              <div class="price_box">
-                <h6 class="price_heading text-gray-600">
-                 Educational Solutions<br><br>
-                 <a href="https://dotpedia.com.ng/" class="btn text-white" style="background:#673AB7;color:white"> <span style="color:white">Contact</span></a>
-                </h6>
-                <br>
-                   
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box">
-            <div class="img-box">
-              <img src="../images/m.jpg" alt="" style="border-radius:10% ;width:100%;">
-            </div>
-            <div class="detail-box">
-              <a href="" style="color: #673AB7">
-                ULTIMADOES
-              </a>
-              <div class="price_box">
-                <h6 class="price_heading text-gray-600">
-                 Gadget/Phones/Accessories<br><br>
-                    <a href="#" class="btn text-white" style="background:#673AB7 "> <span style="color:white">Contact</span></a>
-                </h6>
-            
-              </div>
-            </div>
-          </div>
-        </div>
-       
-      
-       
-        
-       
-        
-      </div>
-      
-    </div>
-  </section>
+  
 
   <!-- end veg section -->
 
@@ -344,7 +305,7 @@
 
   <section class="about_section animated zoomIn">
     <div class="about_bg_box">
-      <img src="../images/29.jpg" alt="">
+      <img src="../images/b.jpg" alt="">
     </div>
     <div class="container ">
       <div class="row">
@@ -365,7 +326,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section><br><br>
 
   <!-- end about section -->
  <!--============================</>=====================================================-->
@@ -373,81 +334,7 @@
 
 <!-- veg section -->
 
-  <section class="veg_section layout_padding animated zoomIn " style="margin-top:-50px;">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h3 style="color: #673AB7; font-weight:200px; font-size:33px">
-          Our Team
-        </h3><br>
-        <p class="text-gray-600">
-         Meet with our team members...
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="box">
-            <div class="img-box">
-              <img src="../images/21.jpeg" alt="" style="border-radius:50%;height:15pc;width:100%">
-            </div>
-            <div class="detail-box">
-              <a href="#" style="color: #673AB7; ">
-               VAD
-              </a>
-              
-            </div>
-            <div class="price_box" style="height:50px">
-                <h6 class="price_heading text-gray-600">
-                  Founder (Software Engineer / Developer)
-                </h6>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box">
-            <div class="img-box">
-              <img src="../images/23.jpeg" alt="" style="border-radius:50%;height:200px;width:100%">
-            </div>
-            <div class="detail-box">
-              <a href="#" style="color: #673AB7; ">
-               Hakodite
-              </a>
-              
-            </div>
-            <div class="price_box" style="height:50px">
-                <h6 class="price_heading text-gray-600">
-                  Co-Founder (Business Ethusiast)
-                </h6>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box">
-            <div class="img-box">
-              <img src="../images/20.jpg" alt="" style="border-radius:50%;height:200px;width:100%">
-            </div>
-            <div class="detail-box">
-              <a href="#" style="color: #673AB7; ">
-                Prodigy
-              </a>
-             
-            </div>
-             <div class="price_box" style="height:50px">
-                <h6 class="price_heading text-gray-600">
-                 Software Developer / SEO Specialist
-                </h6>
-              </div>
-          </div>
-        </div>
-       
-      
-       
-        
-       
-        
-      </div>
-      
-    </div>
-  </section>
+ 
 
   <!-- end veg section -->
 
@@ -455,25 +342,25 @@
 
   <!-- client section -->
 
-  <section class="client_section layout_padding-bottom " style="background: -webkit-linear-gradient(left, #673AB7, #673AB7);">
+  <section class="client_section layout_padding-bottom " >
 
     <div class="container">
       <div class="heading_container heading_center"><br><br><br>
-        <h3 style="color: white; font-weight:200px; font-size:33px ">
-         Don’t just take our word for it
+        <h3 style="color:#673AB7; font-weight:200px; font-size:33px ">
+         Don’t just take our words for it
         </h3>
       </div>
       <div class="row">
       <div class="col-md-6">
         <div class="box">
     
-                <img src="../images/i.png" alt="" style="height:180px;width:100%;border-radius:10%">
+                <img src="../images/i.png" alt="" style="height:180px;width:100%;border-radius:0%">
               </div>
               <div class="name">
-                <h5 class="text-gray-200 text-center">
+                <h5 class="text-gray-700 text-center">
                   Ayomide
                 </h5>
-                <h6 class="text-gray-400 text-center">
+                <h6 class="text-gray-700 text-center">
                  User
                 </h6>
               </div>
@@ -481,7 +368,7 @@
           
       
       <div class="col-md-6">
-        <div class="box text-gray-300">
+        <div class="box text-gray-700">
            FuoyeMarket is an awesome platform, I love using it because all sellers on the platform are trusted sellers, a good platform to connect with my choice sellers.
         </div>
       </div>
@@ -490,13 +377,13 @@
       <div class="col-md-6">
         <div class="box">
     
-                <img src="../images/pel.jpg" alt="" style="height:180px;width:100%;border-radius:10%">
+                <img src="../images/pel.jpg" alt="" style="height:180px;width:100%;border-radius:;">
               </div>
               <div class="name">
-                <h5 class="text-gray-200 text-center">
+                <h5 class="text-gray-700 text-center">
                PelvixBuy'N'Sell
                 </h5>
-                <h6 class="text-gray-400 text-center">
+                <h6 class="text-gray-700 text-center">
                  Seller
                 </h6>
               </div>
@@ -504,7 +391,7 @@
           
       
       <div class="col-md-6">
-        <div class="box text-gray-300">
+        <div class="box text-gray-700">
            FuoyeMarket is a great platform, easy to use and very awesome. It allows me to have audience for my goods. Indeed a great platform.
         </div>
       </div>
@@ -519,7 +406,7 @@
   
 <!-- veg section -->
 
-  <section class="veg_section layout_padding animated zoomIn " style="margin-top:-80px;">
+  <section class="veg_section layout_padding animated zoomIn " style="margin-top:-200px;">
     <div class="container">
       <div class="heading_container heading_center"><br><br><br>
         <h3 style="color: #673AB7; font-weight:200px; font-size:33px ">
@@ -530,9 +417,9 @@
         <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="../images/pel.jpg" alt="" style="border-radius:50%;height:200px;width:100%">
+              <img src="../images/pel.jpg" alt="" style="border-radius:50%;height:100px;width:100px;">
             </div>
-            <div class="detail-box">
+            <div class="detail-box" style="margin-top:-60px">
               <a href="https://wa.me/+2348146828289" style="color: #673AB7; ">
                PELVIXBUY'N'SELL
               </a>
@@ -544,14 +431,14 @@
           </div>
         </div>
        
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" style="margin-top:0px;">
           <div class="box">
             <div class="img-box">
-              <img src="https://doteightplus.com/images/dot.svg" alt="" style="border-radius:50%;height:200px;width:100%">
+              <img src="https://doteightplus.com/images/dot.svg" alt="" style="border-radius:50%;height:200px;height:100px;width:100px;">
             </div>
-            <div class="detail-box">
+            <div class="detail-box" style="margin-top:-60px;">
               <a href="" style="color: #673AB7; ">
-                Doteightplus
+                DOTEIGHTPLUS
               </a>
              
             </div>
@@ -565,11 +452,11 @@
          <div class="col-md-6 col-lg-4">
           <div class="box">
             <div class="img-box">
-              <img src="https://dotpedia.com.ng/images/cover.png" alt="" style="border-radius:50%;height:200px;width:100%">
+              <img src="https://dotpedia.com.ng/images/cover.png" alt="" style="border-radius:50%;height:200px;height:100px;width:100px;">
             </div>
-            <div class="detail-box">
+            <div class="detail-box" style="margin-top:-50px;">
                <a href="https://dotpedia.com.ng/" style="color: #673AB7;">
-               Dotpedia
+               DOTPEDIA
               </a>
              
             </div>
